@@ -11,8 +11,6 @@ setuptools.setup(
     long_description=os.path.join(path, 'README.md').read_file(),
     long_description_content_type='text/markdown',
     url='https://github.com/telnet23/imessage2csv',
-#    author_email='',
-#    author='',
     license='Apache License 2.0',
     use_scm_version=True,
     setup_requires=[
