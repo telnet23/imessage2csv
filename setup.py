@@ -1,14 +1,15 @@
 #!/usr/bin/env python
 
-import os
-import setuptools
+from setuptools import setup
+from os.path import dirname, abspath, join
 
-path = os.path.dirname(os.path.abspath(__file__))
+long_description_path = join(dirname(abspath(__file__)), 'README.md')
+long_description = open(long_description_path, encoding='utf-8').read()
 
-setuptools.setup(
+setup(
     name='imessage2csv',
     description='Export contacts and chat messages from iOS or macOS for easy viewing and searching',
-    long_description=os.path.join(path, 'README.md').read_file(),
+    long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/telnet23/imessage2csv',
     license='Apache License 2.0',
